@@ -1,0 +1,26 @@
+[
+    {
+        "Product": "Regular Sports",
+        "tier1_0_1M": 9,
+        "tier2_1_2M": 8,
+        "tier3_2_3M": 7
+    },
+    {
+        "Product": "Cricket",
+        "tier1_0_1M": 12,
+        "tier2_1_2M": 8,
+        "tier3_2_3M": 7
+    },
+    {
+        "Product": "Racing",
+        "tier1_0_1M": 16,
+        "tier2_1_2M": 15,
+        "tier3_2_3M": 14
+    },
+    {
+        "Product": "Bet Builder",
+        "tier1_0_1M": 12,
+        "tier2_1_2M": 11,
+        "tier3_2_3M": 10
+    }
+]

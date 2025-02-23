@@ -1,0 +1,135 @@
+// Colors
+$primary-color: #6366f1;
+$secondary-color: #8b5cf6;
+
+// Theme Colors
+:root {
+  // Light Theme (default)
+  --background-color: #ffffff;
+  --card-background: #ffffff;
+  --text-primary: #1a1a1a;
+  --text-secondary: #666666;
+  --border-color: #e2e8f0;
+  --hover-background: rgba(99, 102, 241, 0.02);
+  --table-header-text: #ffffff;
+  --table-stripe: rgba(99, 102, 241, 0.02);
+  --table-border: #e2e8f0;
+  --tooltip-background: #ffffff;
+  --tooltip-border: #e2e8f0;
+  --button-background: #ffffff;
+  --button-text: #666666;
+  --input-background: #ffffff;
+  --input-text: #1a1a1a;
+  --input-placeholder: #666666;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --toggle-background: #334155;
+  --toggle-background-dark: #1e293b;
+  --toggle-knob: #ffffff;
+  --toggle-knob-dark: #334155;
+  --primary-color: #{$primary-color};
+}
+
+// Dark Theme
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #0f172a;
+    --card-background: #1e293b;
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --border-color: #334155;
+    --hover-background: rgba(99, 102, 241, 0.1);
+    --table-header-text: #f1f5f9;
+    --table-stripe: rgba(99, 102, 241, 0.05);
+    --table-border: #334155;
+    --tooltip-background: #1e293b;
+    --tooltip-border: #334155;
+    --button-background: #1e293b;
+    --button-text: #f1f5f9;
+    --input-background: #1e293b;
+    --input-text: #f1f5f9;
+    --input-placeholder: #94a3b8;
+    --shadow-color: rgba(0, 0, 0, 0.25);
+    --toggle-background: #1e293b;
+    --toggle-background-dark: #0f172a;
+    --toggle-knob: #334155;
+    --toggle-knob-dark: #1e293b;
+    --primary-color: #{$primary-color};
+  }
+}
+
+[data-theme="light"] {
+  --background-color: #ffffff;
+  --card-background: #ffffff;
+  --text-primary: #1a1a1a;
+  --text-secondary: #666666;
+  --border-color: #e2e8f0;
+  --hover-background: rgba(99, 102, 241, 0.02);
+  --table-header-text: #ffffff;
+  --table-stripe: rgba(99, 102, 241, 0.02);
+  --table-border: #e2e8f0;
+  --tooltip-background: #ffffff;
+  --tooltip-border: #e2e8f0;
+  --button-background: #ffffff;
+  --button-text: #666666;
+  --input-background: #ffffff;
+  --input-text: #1a1a1a;
+  --input-placeholder: #666666;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --toggle-background: #334155;
+  --toggle-background-dark: #1e293b;
+  --toggle-knob: #ffffff;
+  --toggle-knob-dark: #334155;
+  --primary-color: #{$primary-color};
+}
+
+[data-theme="dark"] {
+  --background-color: #0f172a;
+  --card-background: #1e293b;
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --border-color: #334155;
+  --hover-background: rgba(99, 102, 241, 0.1);
+  --table-header-text: #f1f5f9;
+  --table-stripe: rgba(99, 102, 241, 0.05);
+  --table-border: #334155;
+  --tooltip-background: #1e293b;
+  --tooltip-border: #334155;
+  --button-background: #1e293b;
+  --button-text: #f1f5f9;
+  --input-background: #1e293b;
+  --input-text: #f1f5f9;
+  --input-placeholder: #94a3b8;
+  --shadow-color: rgba(0, 0, 0, 0.25);
+  --toggle-background: #1e293b;
+  --toggle-background-dark: #0f172a;
+  --toggle-knob: #334155;
+  --primary-color: #{$primary-color};
+}
+
+// Layout variables
+$border-radius: 8px;
+$container-max-width: 100vw;
+$mobile-breakpoint: 768px;
+
+// Animation variables
+$transition: all 0.2s ease-in-out;
+
+// Typography
+$font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+$font-family-mono: 'JetBrains Mono', monospace;
+
+// Spacing
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+
+// Shadows
+$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+// Z-index
+$z-index-header: 10;
+$z-index-modal: 1000; 

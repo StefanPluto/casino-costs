@@ -1,0 +1,50 @@
+@mixin gradient-text {
+  background: linear-gradient(135deg, $primary-color, $secondary-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@mixin gradient-background {
+  background: linear-gradient(135deg, $primary-color, $secondary-color);
+}
+
+@mixin card($include-hover: false) {
+  background: var(--card-background);
+  border-radius: $border-radius;
+  box-shadow: $shadow-md;
+
+  @if $include-hover {
+    transition: $transition;
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: $shadow-lg;
+    }
+  }
+}
+
+@mixin responsive($breakpoint) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin container($max-width: $container-max-width) {
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+}
+
+@mixin full-width {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+} 
